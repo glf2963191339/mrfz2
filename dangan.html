@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>干员</title>
+		<style type="text/css">
+			*{padding: 0;margin: 0 auto;}
+			body{
+				width: 1500px;
+				height:778px;
+				background-color: black;
+				background-image: url(img/背景.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			.father{
+				width: 1500px;
+				height: 778px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-content: center;	
+			}
+			.top{
+				width: 650px;
+				height: 40px;
+				position: absolute;
+				top:25px;
+				animation-name: top;
+				animation-duration: 1s;
+			}
+			
+			@keyframes top{
+				from{
+					transform: translate(0px,-100px);
+				}
+				to{
+					transform: translate(0px,0px);
+				}
+			}
+			li{
+				float: left;
+				width: 120px;
+				height: 40px;
+				list-style: none;
+				text-align: center;
+				font-weight: bold;
+				line-height: 40px;
+			}
+			a{
+				text-decoration: none;
+				display: block;
+				
+			}
+			a.topcs:link{
+				color: white;
+			}
+			a.topcs:visited{
+				color:white;
+			}
+			
+			a.topcs:hover{
+				color:#22BBFF;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="father">
+		    <div class="top">
+				<ul>
+					<li><a href="index.html" class="topcs">首页</a></li>
+					<li><a href="qingbao.html" class="topcs">情报</a></li>
+					<li><a href="ganyuan.html" class="topcs">干员</a></li>
+					<li><a href="sheding.html" class="topcs">设定</a></li>
+					<li><a href="dangan.html" class="topcs">档案</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,171 @@
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body {
+	width: 1500px;
+	height: 778px;
+	background-color: black;
+	background-image: url(../img/背景.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.father {
+	width: 1500px;
+	height: 778px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.top {
+	width: 650px;
+	height: 40px;
+	position: absolute;
+	top: 25px;
+	animation-name: top;
+	animation-duration: 1s;
+}
+
+.fourth {
+	width: 530px;
+	height: 199px;
+	position: absolute;
+	left: 125px;
+	top: 150px;
+	background-image: url(../img/4th.jpg);
+	background-repeat: no-repeat;
+	background-size: 530px 199px;
+	animation-name: fourth;
+	animation-duration: 0.5s;
+}
+
+.rhodesisland {
+	width: 400px;
+	height: 350px;
+	font-size: 90px;
+	color: white;
+	position: absolute;
+	right: 350px;
+	top: 130px;
+	text-shadow: #000000 3px 3px;
+	animation-name: arknights;
+	animation-duration: 4s;
+}
+
+.scatti {
+	width: 760px;
+	height: 800px;
+	position: absolute;
+	right: 0px;
+	top: -20px;
+	background-image: url(../img/scatti.png);
+	background-size: 1100px 1100px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	animation-name: amiya;
+	animation-duration: 0.5s;
+}
+
+.mingrifangzhou {
+	width: 200px;
+	height: 200px;
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	right: 547px;
+	top: 390px;
+	text-shadow: #000000 3px 3px;
+	animation-name: arknights;
+	animation-duration: 4s;
+}
+
+.qingbaozhan {
+	width: 400px;
+	height: 350px;
+	font-size: 90px;
+	color: white;
+	position: absolute;
+	right: 360px;
+	top: 470px;
+	text-shadow: #000000 3px 3px;
+	animation-name: arknights;
+	animation-duration: 4s;
+}
+
+.gonggao {
+	width: 1500px;
+	height: 300px;
+	position: absolute;
+	bottom: 100px;
+	left: 0px;
+	color: white;
+	animation-name: fourth;
+	animation-duration: 0.5s;
+}
+
+li {
+	float: left;
+	width: 120px;
+	height: 40px;
+	list-style: none;
+	text-align: center;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+a.topcs:link {
+	color: white;
+}
+
+a.topcs:visited {
+	color: white;
+}
+
+a.topcs:hover {
+	color: #22BBFF;
+}
+
+@keyframes fourth {
+	from {
+		transform: translate(-700px, 0px);
+	}
+	to {
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes top {
+	from {
+		transform: translate(0px, -100px);
+	}
+	to {
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes arknights {
+	from {
+		color: #000;
+	}
+	to {
+		color: white;
+	}
+}
+
+@keyframes amiya {
+	from {
+		transform: translate(0px, 800px);
+	}
+	to {
+		transform: translate(0px, 0px);
+	}
+}

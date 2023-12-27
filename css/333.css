@@ -1,0 +1,108 @@
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+body {
+	width: 1500px;
+	height: 778px;
+	background-color: black;
+	background-image: url(../img/背景.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.father {
+	width: 1500px;
+	height: 778px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+}
+
+.top {
+	width: 650px;
+	height: 40px;
+	position: absolute;
+	top: 25px;
+	border: white;
+	animation-name: top;
+	animation-duration: 1s;
+}
+
+.ka {
+	width: 1300px;
+	height: 778px;
+	display: grid;
+	grid-template: 1fr/repeat(4, 1500px);
+	animation-name: ka;
+	animation-duration: 15s;
+	animation-timing-function: steps(6000, end);
+	animation-iteration-count: infinite;
+	animation-delay: 1.5s;
+}
+
+.mi {
+	width: 1300px;
+	height: 778px;
+	animation-name: mi;
+	animation-duration: 1.5s;
+}
+
+@keyframes mi {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}
+
+@keyframes top {
+	from {
+		transform: translate(0px, -100px);
+	}
+	to {
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes ka {
+	to {
+		transform: translate(-4500px)
+	}
+}
+
+h1 {
+	color: white;
+	font-size: 90px;
+}
+
+li {
+	float: left;
+	width: 120px;
+	height: 40px;
+	list-style: none;
+	text-align: center;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+a.topcs:link {
+	color: white;
+}
+
+a.topcs:visited {
+	color: white;
+}
+
+a.topcs:hover {
+	color: #22BBFF;
+}
